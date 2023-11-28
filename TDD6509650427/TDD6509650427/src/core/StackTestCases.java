@@ -32,7 +32,6 @@ public class StackTestCases extends TestCase {
             s1.push(20);
             s1.push("Hello");
         } catch (Exception e) {
-			e.printStackTrace();
 			assertEquals("All elements in the stack must be of the same type.", e.getMessage());		}
 	}
 	
@@ -48,7 +47,7 @@ public class StackTestCases extends TestCase {
 		assertEquals(20, s1.pop());
 		assertEquals(10, s1.pop()); 
 	}
-	/*
+	
 	//TC5
 	public void testPushFullStack() {
 		Stack s1 = new Stack(10);
@@ -60,10 +59,8 @@ public class StackTestCases extends TestCase {
             s1.push(50);
             s1.push(60);    
         } catch (Exception e) {
-        	e.printStackTrace();
         	assertEquals("Error: the stack is full.", e.getMessage());
         }
-		assertEquals(50, s1.pop()); 
-	}*/
+	}
 
 }
